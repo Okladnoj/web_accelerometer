@@ -72,6 +72,6 @@ class WebAccelerometerWeb extends AccelerometerPlatform {
       );
 
       onMotion(data);
-    });
+    }, true);
   }
 }
