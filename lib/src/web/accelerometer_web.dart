@@ -25,9 +25,9 @@ class WebAccelerometerWeb extends AccelerometerPlatform {
   void motionEvents(ValueSetter<AccelerometerData> onMotion) {
     try {
       _genericSensorAPI(onMotion);
+      _motionEvents(onMotion);
     } catch (e) {
       log('Accelerometer not supported: $e');
-      _motionEvents(onMotion);
     }
   }
 
